@@ -1,0 +1,2006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6701DEBE413339E4B0EE474C /* Pods_MeiJuLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C505DC89B3A53846A67BABFC /* Pods_MeiJuLover.framework */; };
+		80CCE0FDF4FF894C4BCC6463 /* Pods_MeiJuLoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B6CFA1B70EFB89487845B2 /* Pods_MeiJuLoverTests.framework */; };
+		B7B390159C2BE67B2A27650F /* Pods_MeiJuLover_MeiJuLoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FB2691B58CE03B243E585A /* Pods_MeiJuLover_MeiJuLoverUITests.framework */; };
+		C6032796250649AC00335011 /* MJQDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6032795250649AC00335011 /* MJQDViewController.m */; };
+		C603279A250649BE00335011 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6032798250649BE00335011 /* LaunchView.m */; };
+		C60327BC250649CF00335011 /* YHPhotoSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = C603279F250649CF00335011 /* YHPhotoSelect.m */; };
+		C60327BD250649CF00335011 /* YHResizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327A4250649CF00335011 /* YHResizeView.m */; };
+		C60327BE250649CF00335011 /* YHCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327A5250649CF00335011 /* YHCropView.m */; };
+		C60327BF250649CF00335011 /* YHCropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327A6250649CF00335011 /* YHCropRectView.m */; };
+		C60327C0250649CF00335011 /* YHImageEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327A7250649CF00335011 /* YHImageEditVC.m */; };
+		C60327C1250649CF00335011 /* CWCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327A9250649CF00335011 /* CWCarousel.m */; };
+		C60327C2250649CF00335011 /* CWPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327AB250649CF00335011 /* CWPageControl.m */; };
+		C60327C3250649CF00335011 /* CWFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327AC250649CF00335011 /* CWFlowLayout.m */; };
+		C60327C4250649CF00335011 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327B2250649CF00335011 /* SVRadialGradientLayer.m */; };
+		C60327C5250649CF00335011 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327B5250649CF00335011 /* SVProgressAnimatedView.m */; };
+		C60327C6250649CF00335011 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327B8250649CF00335011 /* SVProgressHUD.m */; };
+		C60327C7250649CF00335011 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327B9250649CF00335011 /* SVIndefiniteAnimatedView.m */; };
+		C60327C8250649CF00335011 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C60327BA250649CF00335011 /* SVProgressHUD.bundle */; };
+		C60327CB25064A2400335011 /* PermissionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327C925064A2300335011 /* PermissionUtils.m */; };
+		C60327CE25064A3000335011 /* UIViewController+XMAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327CD25064A3000335011 /* UIViewController+XMAdd.m */; };
+		C60327D225064A9300335011 /* MJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327D125064A9300335011 /* MJHomeViewController.m */; };
+		C60327D625064C5E00335011 /* MJHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327D525064C5E00335011 /* MJHomeTableViewCell.m */; };
+		C60327DB25064EE400335011 /* MJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327DA25064EE400335011 /* MJDetailViewController.m */; };
+		C60327DE25064EF800335011 /* BaseBriefView.m in Sources */ = {isa = PBXBuildFile; fileRef = C60327DD25064EF800335011 /* BaseBriefView.m */; };
+		C6C602BE250E413F00E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601D7250E413E00E7D56A /* 美剧爱好者.png */; };
+		C6C602BF250E413F00E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601D8250E413E00E7D56A /* 火锅爱好者.png */; };
+		C6C602C0250E413F00E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601D9250E413E00E7D56A /* 爱辣.png */; };
+		C6C602C1250E413F00E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DA250E413E00E7D56A /* 中国小吃.png */; };
+		C6C602C2250E413F00E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DB250E413E00E7D56A /* 太极拳.png */; };
+		C6C602C3250E413F00E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DC250E413E00E7D56A /* 广州小吃.png */; };
+		C6C602C4250E413F00E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DD250E413E00E7D56A /* 羽毛球爱好者.png */; };
+		C6C602C5250E413F00E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DE250E413E00E7D56A /* 广州旅游.png */; };
+		C6C602C6250E413F00E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601DF250E413E00E7D56A /* 桌游迷.png */; };
+		C6C602C7250E413F00E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E0250E413E00E7D56A /* 潮汕小食圈.png */; };
+		C6C602C8250E413F00E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E1250E413E00E7D56A /* 露营迷.png */; };
+		C6C602C9250E413F00E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E2250E413E00E7D56A /* UFC爱好者.png */; };
+		C6C602CA250E413F00E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E3250E413F00E7D56A /* 网球王子.png */; };
+		C6C602CB250E413F00E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E4250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C602CC250E413F00E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E5250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C602CD250E413F00E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E6250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C602CE250E413F00E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E7250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C602CF250E413F00E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E8250E413F00E7D56A /* 登山迷.png */; };
+		C6C602D0250E413F00E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601E9250E413F00E7D56A /* 咏春拳.png */; };
+		C6C602D1250E413F00E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601EA250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C602D2250E413F00E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601EB250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C602D3250E413F00E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601EC250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C602D4250E413F00E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601ED250E413F00E7D56A /* 日出迷.png */; };
+		C6C602D5250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601EE250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C602D6250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601EF250E413F00E7D56A /* 面食者.png */; };
+		C6C602D7250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F0250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C602D8250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F1250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C602D9250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F2250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C602DA250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F4250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C602DB250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F5250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C602DC250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F6250E413F00E7D56A /* 爱辣.png */; };
+		C6C602DD250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F7250E413F00E7D56A /* 中国小吃.png */; };
+		C6C602DE250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F8250E413F00E7D56A /* 太极拳.png */; };
+		C6C602DF250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601F9250E413F00E7D56A /* 广州小吃.png */; };
+		C6C602E0250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FA250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C602E1250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FB250E413F00E7D56A /* 广州旅游.png */; };
+		C6C602E2250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FC250E413F00E7D56A /* 桌游迷.png */; };
+		C6C602E3250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FD250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C602E4250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FE250E413F00E7D56A /* 露营迷.png */; };
+		C6C602E5250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C601FF250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C602E6250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60200250E413F00E7D56A /* 网球王子.png */; };
+		C6C602E7250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60201250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C602E8250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60202250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C602E9250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60203250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C602EA250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60204250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C602EB250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60205250E413F00E7D56A /* 登山迷.png */; };
+		C6C602EC250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60206250E413F00E7D56A /* 咏春拳.png */; };
+		C6C602ED250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60207250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C602EE250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60208250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C602EF250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60209250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C602F0250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020A250E413F00E7D56A /* 日出迷.png */; };
+		C6C602F1250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020B250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C602F2250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020C250E413F00E7D56A /* 面食者.png */; };
+		C6C602F3250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020D250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C602F4250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020E250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C602F5250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6020F250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C602F6250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60211250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C602F7250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60212250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C602F8250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60213250E413F00E7D56A /* 爱辣.png */; };
+		C6C602F9250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60214250E413F00E7D56A /* 中国小吃.png */; };
+		C6C602FA250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60215250E413F00E7D56A /* 太极拳.png */; };
+		C6C602FB250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60216250E413F00E7D56A /* 广州小吃.png */; };
+		C6C602FC250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60217250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C602FD250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60218250E413F00E7D56A /* 广州旅游.png */; };
+		C6C602FE250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60219250E413F00E7D56A /* 桌游迷.png */; };
+		C6C602FF250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021A250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C60300250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021B250E413F00E7D56A /* 露营迷.png */; };
+		C6C60301250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021C250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C60302250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021D250E413F00E7D56A /* 网球王子.png */; };
+		C6C60303250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021E250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C60304250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6021F250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C60305250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60220250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C60306250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60221250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C60307250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60222250E413F00E7D56A /* 登山迷.png */; };
+		C6C60308250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60223250E413F00E7D56A /* 咏春拳.png */; };
+		C6C60309250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60224250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C6030A250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60225250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C6030B250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60226250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C6030C250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60227250E413F00E7D56A /* 日出迷.png */; };
+		C6C6030D250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60228250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C6030E250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60229250E413F00E7D56A /* 面食者.png */; };
+		C6C6030F250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6022A250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C60310250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6022B250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C60311250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6022C250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C60312250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6022E250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C60313250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6022F250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C60314250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60230250E413F00E7D56A /* 爱辣.png */; };
+		C6C60315250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60231250E413F00E7D56A /* 中国小吃.png */; };
+		C6C60316250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60232250E413F00E7D56A /* 太极拳.png */; };
+		C6C60317250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60233250E413F00E7D56A /* 广州小吃.png */; };
+		C6C60318250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60234250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C60319250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60235250E413F00E7D56A /* 广州旅游.png */; };
+		C6C6031A250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60236250E413F00E7D56A /* 桌游迷.png */; };
+		C6C6031B250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60237250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C6031C250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60238250E413F00E7D56A /* 露营迷.png */; };
+		C6C6031D250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60239250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C6031E250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023A250E413F00E7D56A /* 网球王子.png */; };
+		C6C6031F250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023B250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C60320250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023C250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C60321250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023D250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C60322250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023E250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C60323250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6023F250E413F00E7D56A /* 登山迷.png */; };
+		C6C60324250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60240250E413F00E7D56A /* 咏春拳.png */; };
+		C6C60325250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60241250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C60326250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60242250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C60327250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60243250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C60328250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60244250E413F00E7D56A /* 日出迷.png */; };
+		C6C60329250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60245250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C6032A250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60246250E413F00E7D56A /* 面食者.png */; };
+		C6C6032B250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60247250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C6032C250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60248250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C6032D250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60249250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C6032E250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6024B250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C6032F250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6024C250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C60330250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6024D250E413F00E7D56A /* 爱辣.png */; };
+		C6C60331250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6024E250E413F00E7D56A /* 中国小吃.png */; };
+		C6C60332250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6024F250E413F00E7D56A /* 太极拳.png */; };
+		C6C60333250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60250250E413F00E7D56A /* 广州小吃.png */; };
+		C6C60334250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60251250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C60335250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60252250E413F00E7D56A /* 广州旅游.png */; };
+		C6C60336250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60253250E413F00E7D56A /* 桌游迷.png */; };
+		C6C60337250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60254250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C60338250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60255250E413F00E7D56A /* 露营迷.png */; };
+		C6C60339250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60256250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C6033A250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60257250E413F00E7D56A /* 网球王子.png */; };
+		C6C6033B250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60258250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C6033C250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60259250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C6033D250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025A250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C6033E250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025B250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C6033F250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025C250E413F00E7D56A /* 登山迷.png */; };
+		C6C60340250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025D250E413F00E7D56A /* 咏春拳.png */; };
+		C6C60341250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025E250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C60342250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6025F250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C60343250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60260250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C60344250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60261250E413F00E7D56A /* 日出迷.png */; };
+		C6C60345250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60262250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C60346250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60263250E413F00E7D56A /* 面食者.png */; };
+		C6C60347250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60264250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C60348250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60265250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C60349250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60266250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C6034A250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60268250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C6034B250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60269250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C6034C250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026A250E413F00E7D56A /* 爱辣.png */; };
+		C6C6034D250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026B250E413F00E7D56A /* 中国小吃.png */; };
+		C6C6034E250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026C250E413F00E7D56A /* 太极拳.png */; };
+		C6C6034F250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026D250E413F00E7D56A /* 广州小吃.png */; };
+		C6C60350250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026E250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C60351250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6026F250E413F00E7D56A /* 广州旅游.png */; };
+		C6C60352250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60270250E413F00E7D56A /* 桌游迷.png */; };
+		C6C60353250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60271250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C60354250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60272250E413F00E7D56A /* 露营迷.png */; };
+		C6C60355250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60273250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C60356250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60274250E413F00E7D56A /* 网球王子.png */; };
+		C6C60357250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60275250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C60358250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60276250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C60359250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60277250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C6035A250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60278250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C6035B250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60279250E413F00E7D56A /* 登山迷.png */; };
+		C6C6035C250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027A250E413F00E7D56A /* 咏春拳.png */; };
+		C6C6035D250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027B250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C6035E250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027C250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C6035F250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027D250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C60360250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027E250E413F00E7D56A /* 日出迷.png */; };
+		C6C60361250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6027F250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C60362250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60280250E413F00E7D56A /* 面食者.png */; };
+		C6C60363250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60281250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C60364250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60282250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C60365250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60283250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C60366250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60285250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C60367250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60286250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C60368250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60287250E413F00E7D56A /* 爱辣.png */; };
+		C6C60369250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60288250E413F00E7D56A /* 中国小吃.png */; };
+		C6C6036A250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60289250E413F00E7D56A /* 太极拳.png */; };
+		C6C6036B250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028A250E413F00E7D56A /* 广州小吃.png */; };
+		C6C6036C250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028B250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C6036D250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028C250E413F00E7D56A /* 广州旅游.png */; };
+		C6C6036E250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028D250E413F00E7D56A /* 桌游迷.png */; };
+		C6C6036F250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028E250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C60370250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6028F250E413F00E7D56A /* 露营迷.png */; };
+		C6C60371250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60290250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C60372250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60291250E413F00E7D56A /* 网球王子.png */; };
+		C6C60373250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60292250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C60374250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60293250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C60375250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60294250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C60376250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60295250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C60377250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60296250E413F00E7D56A /* 登山迷.png */; };
+		C6C60378250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60297250E413F00E7D56A /* 咏春拳.png */; };
+		C6C60379250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60298250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C6037A250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C60299250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C6037B250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029A250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C6037C250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029B250E413F00E7D56A /* 日出迷.png */; };
+		C6C6037D250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029C250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C6037E250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029D250E413F00E7D56A /* 面食者.png */; };
+		C6C6037F250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029E250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C60380250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C6029F250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C60381250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A0250E413F00E7D56A /* 游戏机迷.png */; };
+		C6C60382250E414000E7D56A /* 美剧爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A2250E413F00E7D56A /* 美剧爱好者.png */; };
+		C6C60383250E414000E7D56A /* 火锅爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A3250E413F00E7D56A /* 火锅爱好者.png */; };
+		C6C60384250E414000E7D56A /* 爱辣.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A4250E413F00E7D56A /* 爱辣.png */; };
+		C6C60385250E414000E7D56A /* 中国小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A5250E413F00E7D56A /* 中国小吃.png */; };
+		C6C60386250E414000E7D56A /* 太极拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A6250E413F00E7D56A /* 太极拳.png */; };
+		C6C60387250E414000E7D56A /* 广州小吃.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A7250E413F00E7D56A /* 广州小吃.png */; };
+		C6C60388250E414000E7D56A /* 羽毛球爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A8250E413F00E7D56A /* 羽毛球爱好者.png */; };
+		C6C60389250E414000E7D56A /* 广州旅游.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602A9250E413F00E7D56A /* 广州旅游.png */; };
+		C6C6038A250E414000E7D56A /* 桌游迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AA250E413F00E7D56A /* 桌游迷.png */; };
+		C6C6038B250E414000E7D56A /* 潮汕小食圈.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AB250E413F00E7D56A /* 潮汕小食圈.png */; };
+		C6C6038C250E414000E7D56A /* 露营迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AC250E413F00E7D56A /* 露营迷.png */; };
+		C6C6038D250E414000E7D56A /* UFC爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AD250E413F00E7D56A /* UFC爱好者.png */; };
+		C6C6038E250E414000E7D56A /* 网球王子.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AE250E413F00E7D56A /* 网球王子.png */; };
+		C6C6038F250E414000E7D56A /* 东南亚海岛迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602AF250E413F00E7D56A /* 东南亚海岛迷.png */; };
+		C6C60390250E414000E7D56A /* 粤语剧集爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B0250E413F00E7D56A /* 粤语剧集爱好者.png */; };
+		C6C60391250E414000E7D56A /* 灌篮高手.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B1250E413F00E7D56A /* 灌篮高手.png */; };
+		C6C60392250E414000E7D56A /* 蹦极迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B2250E413F00E7D56A /* 蹦极迷.png */; };
+		C6C60393250E414000E7D56A /* 登山迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B3250E413F00E7D56A /* 登山迷.png */; };
+		C6C60394250E414000E7D56A /* 咏春拳.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B4250E413F00E7D56A /* 咏春拳.png */; };
+		C6C60395250E414000E7D56A /* 灯饰粉丝迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B5250E413F00E7D56A /* 灯饰粉丝迷.png */; };
+		C6C60396250E414000E7D56A /* 狗狗俱乐部.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B6250E413F00E7D56A /* 狗狗俱乐部.png */; };
+		C6C60397250E414000E7D56A /* 长跑爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B7250E413F00E7D56A /* 长跑爱好者.png */; };
+		C6C60398250E414000E7D56A /* 日出迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B8250E413F00E7D56A /* 日出迷.png */; };
+		C6C60399250E414000E7D56A /* 我的英雄学院.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602B9250E413F00E7D56A /* 我的英雄学院.png */; };
+		C6C6039A250E414000E7D56A /* 面食者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602BA250E413F00E7D56A /* 面食者.png */; };
+		C6C6039B250E414000E7D56A /* 街舞爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602BB250E413F00E7D56A /* 街舞爱好者.png */; };
+		C6C6039C250E414000E7D56A /* 极限爱好者.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602BC250E413F00E7D56A /* 极限爱好者.png */; };
+		C6C6039D250E414000E7D56A /* 游戏机迷.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C602BD250E413F00E7D56A /* 游戏机迷.png */; };
+		C6CE291724B03917003ADE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE291624B03917003ADE43 /* AppDelegate.m */; };
+		C6CE292024B03917003ADE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CE291E24B03917003ADE43 /* Main.storyboard */; };
+		C6CE292224B03918003ADE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6CE292124B03918003ADE43 /* Assets.xcassets */; };
+		C6CE292524B03918003ADE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CE292324B03918003ADE43 /* LaunchScreen.storyboard */; };
+		C6CE292824B03918003ADE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE292724B03918003ADE43 /* main.m */; };
+		C6CE293224B03918003ADE43 /* MeiJuLoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE293124B03918003ADE43 /* MeiJuLoverTests.m */; };
+		C6CE293D24B03918003ADE43 /* MeiJuLoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE293C24B03918003ADE43 /* MeiJuLoverUITests.m */; };
+		C6CE2EF524B0B526003ADE43 /* MJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE2EF424B0B526003ADE43 /* MJNavigationController.m */; };
+		C6CE2EF824B0B534003ADE43 /* MJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE2EF724B0B534003ADE43 /* MJBaseViewController.m */; };
+		C6CE2EFB24B0B548003ADE43 /* MJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE2EFA24B0B548003ADE43 /* MJTabBarController.m */; };
+		C6CE2F0024B0B559003ADE43 /* MBProgressHUD+WJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE2EFE24B0B559003ADE43 /* MBProgressHUD+WJTools.m */; };
+		C6CE2F0124B0B559003ADE43 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CE2EFF24B0B559003ADE43 /* UIColor+Additions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6CE292E24B03918003ADE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CE290A24B03917003ADE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CE291124B03917003ADE43;
+			remoteInfo = MeiJuLover;
+		};
+		C6CE293924B03918003ADE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CE290A24B03917003ADE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CE291124B03917003ADE43;
+			remoteInfo = MeiJuLover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F68A33E01039BEA3F3426E /* Pods-MeiJuLover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLover.debug.xcconfig"; path = "Target Support Files/Pods-MeiJuLover/Pods-MeiJuLover.debug.xcconfig"; sourceTree = "<group>"; };
+		18C79DF4F7C111CEB8DD7187 /* Pods-MeiJuLover-MeiJuLoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLover-MeiJuLoverUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeiJuLover-MeiJuLoverUITests/Pods-MeiJuLover-MeiJuLoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		493A7C6E0D459D2AEE7A3859 /* Pods-MeiJuLover-MeiJuLoverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLover-MeiJuLoverUITests.release.xcconfig"; path = "Target Support Files/Pods-MeiJuLover-MeiJuLoverUITests/Pods-MeiJuLover-MeiJuLoverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		753864C2C24E28A9C66D294C /* Pods-MeiJuLover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLover.release.xcconfig"; path = "Target Support Files/Pods-MeiJuLover/Pods-MeiJuLover.release.xcconfig"; sourceTree = "<group>"; };
+		92B6CFA1B70EFB89487845B2 /* Pods_MeiJuLoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeiJuLoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FB2691B58CE03B243E585A /* Pods_MeiJuLover_MeiJuLoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeiJuLover_MeiJuLoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C505DC89B3A53846A67BABFC /* Pods_MeiJuLover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeiJuLover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6032794250649AC00335011 /* MJQDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJQDViewController.h; sourceTree = "<group>"; };
+		C6032795250649AC00335011 /* MJQDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJQDViewController.m; sourceTree = "<group>"; };
+		C6032798250649BE00335011 /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchView.m; sourceTree = "<group>"; };
+		C6032799250649BE00335011 /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchView.h; sourceTree = "<group>"; };
+		C603279C250649CF00335011 /* YHImageEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHImageEditVC.h; sourceTree = "<group>"; };
+		C603279E250649CF00335011 /* YHPhotoSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPhotoSelect.h; sourceTree = "<group>"; };
+		C603279F250649CF00335011 /* YHPhotoSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPhotoSelect.m; sourceTree = "<group>"; };
+		C60327A1250649CF00335011 /* YHResizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHResizeView.h; sourceTree = "<group>"; };
+		C60327A2250649CF00335011 /* YHCropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCropRectView.h; sourceTree = "<group>"; };
+		C60327A3250649CF00335011 /* YHCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHCropView.h; sourceTree = "<group>"; };
+		C60327A4250649CF00335011 /* YHResizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHResizeView.m; sourceTree = "<group>"; };
+		C60327A5250649CF00335011 /* YHCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCropView.m; sourceTree = "<group>"; };
+		C60327A6250649CF00335011 /* YHCropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHCropRectView.m; sourceTree = "<group>"; };
+		C60327A7250649CF00335011 /* YHImageEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHImageEditVC.m; sourceTree = "<group>"; };
+		C60327A9250649CF00335011 /* CWCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWCarousel.m; sourceTree = "<group>"; };
+		C60327AA250649CF00335011 /* CWCarouselHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWCarouselHeader.h; sourceTree = "<group>"; };
+		C60327AB250649CF00335011 /* CWPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWPageControl.m; sourceTree = "<group>"; };
+		C60327AC250649CF00335011 /* CWFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWFlowLayout.m; sourceTree = "<group>"; };
+		C60327AD250649CF00335011 /* CWCarouselProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWCarouselProtocol.h; sourceTree = "<group>"; };
+		C60327AE250649CF00335011 /* CWCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWCarousel.h; sourceTree = "<group>"; };
+		C60327AF250649CF00335011 /* CWPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWPageControl.h; sourceTree = "<group>"; };
+		C60327B0250649CF00335011 /* CWFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFlowLayout.h; sourceTree = "<group>"; };
+		C60327B2250649CF00335011 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		C60327B3250649CF00335011 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		C60327B4250649CF00335011 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		C60327B5250649CF00335011 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		C60327B6250649CF00335011 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		C60327B7250649CF00335011 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		C60327B8250649CF00335011 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		C60327B9250649CF00335011 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		C60327BA250649CF00335011 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		C60327BB250649CF00335011 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		C60327C925064A2300335011 /* PermissionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionUtils.m; sourceTree = "<group>"; };
+		C60327CA25064A2400335011 /* PermissionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionUtils.h; sourceTree = "<group>"; };
+		C60327CC25064A3000335011 /* UIViewController+XMAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XMAdd.h"; sourceTree = "<group>"; };
+		C60327CD25064A3000335011 /* UIViewController+XMAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XMAdd.m"; sourceTree = "<group>"; };
+		C60327D025064A9300335011 /* MJHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJHomeViewController.h; sourceTree = "<group>"; };
+		C60327D125064A9300335011 /* MJHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJHomeViewController.m; sourceTree = "<group>"; };
+		C60327D425064C5E00335011 /* MJHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJHomeTableViewCell.h; sourceTree = "<group>"; };
+		C60327D525064C5E00335011 /* MJHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJHomeTableViewCell.m; sourceTree = "<group>"; };
+		C60327D925064EE400335011 /* MJDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJDetailViewController.h; sourceTree = "<group>"; };
+		C60327DA25064EE400335011 /* MJDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJDetailViewController.m; sourceTree = "<group>"; };
+		C60327DC25064EF800335011 /* BaseBriefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBriefView.h; sourceTree = "<group>"; };
+		C60327DD25064EF800335011 /* BaseBriefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBriefView.m; sourceTree = "<group>"; };
+		C6C601D7250E413E00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C601D8250E413E00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C601D9250E413E00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C601DA250E413E00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C601DB250E413E00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C601DC250E413E00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C601DD250E413E00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C601DE250E413E00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C601DF250E413E00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C601E0250E413E00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C601E1250E413E00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C601E2250E413E00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C601E3250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C601E4250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C601E5250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C601E6250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C601E7250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C601E8250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C601E9250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C601EA250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C601EB250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C601EC250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C601ED250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C601EE250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C601EF250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C601F0250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C601F1250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C601F2250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C601F4250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C601F5250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C601F6250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C601F7250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C601F8250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C601F9250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C601FA250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C601FB250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C601FC250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C601FD250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C601FE250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C601FF250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C60200250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C60201250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C60202250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C60203250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C60204250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C60205250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C60206250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C60207250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C60208250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C60209250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C6020A250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C6020B250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C6020C250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C6020D250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C6020E250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C6020F250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C60211250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C60212250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C60213250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C60214250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C60215250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C60216250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C60217250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C60218250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C60219250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C6021A250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C6021B250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C6021C250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C6021D250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C6021E250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C6021F250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C60220250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C60221250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C60222250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C60223250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C60224250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C60225250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C60226250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C60227250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C60228250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C60229250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C6022A250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C6022B250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C6022C250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C6022E250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C6022F250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C60230250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C60231250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C60232250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C60233250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C60234250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C60235250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C60236250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C60237250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C60238250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C60239250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C6023A250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C6023B250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C6023C250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C6023D250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C6023E250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C6023F250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C60240250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C60241250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C60242250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C60243250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C60244250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C60245250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C60246250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C60247250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C60248250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C60249250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C6024B250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C6024C250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C6024D250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C6024E250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C6024F250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C60250250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C60251250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C60252250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C60253250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C60254250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C60255250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C60256250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C60257250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C60258250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C60259250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C6025A250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C6025B250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C6025C250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C6025D250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C6025E250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C6025F250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C60260250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C60261250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C60262250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C60263250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C60264250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C60265250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C60266250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C60268250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C60269250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C6026A250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C6026B250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C6026C250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C6026D250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C6026E250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C6026F250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C60270250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C60271250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C60272250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C60273250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C60274250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C60275250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C60276250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C60277250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C60278250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C60279250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C6027A250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C6027B250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C6027C250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C6027D250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C6027E250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C6027F250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C60280250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C60281250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C60282250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C60283250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C60285250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C60286250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C60287250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C60288250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C60289250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C6028A250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C6028B250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C6028C250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C6028D250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C6028E250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C6028F250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C60290250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C60291250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C60292250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C60293250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C60294250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C60295250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C60296250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C60297250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C60298250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C60299250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C6029A250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C6029B250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C6029C250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C6029D250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C6029E250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C6029F250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C602A0250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6C602A2250E413F00E7D56A /* 美剧爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美剧爱好者.png"; sourceTree = "<group>"; };
+		C6C602A3250E413F00E7D56A /* 火锅爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火锅爱好者.png"; sourceTree = "<group>"; };
+		C6C602A4250E413F00E7D56A /* 爱辣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "爱辣.png"; sourceTree = "<group>"; };
+		C6C602A5250E413F00E7D56A /* 中国小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中国小吃.png"; sourceTree = "<group>"; };
+		C6C602A6250E413F00E7D56A /* 太极拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "太极拳.png"; sourceTree = "<group>"; };
+		C6C602A7250E413F00E7D56A /* 广州小吃.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州小吃.png"; sourceTree = "<group>"; };
+		C6C602A8250E413F00E7D56A /* 羽毛球爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "羽毛球爱好者.png"; sourceTree = "<group>"; };
+		C6C602A9250E413F00E7D56A /* 广州旅游.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "广州旅游.png"; sourceTree = "<group>"; };
+		C6C602AA250E413F00E7D56A /* 桌游迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桌游迷.png"; sourceTree = "<group>"; };
+		C6C602AB250E413F00E7D56A /* 潮汕小食圈.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "潮汕小食圈.png"; sourceTree = "<group>"; };
+		C6C602AC250E413F00E7D56A /* 露营迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "露营迷.png"; sourceTree = "<group>"; };
+		C6C602AD250E413F00E7D56A /* UFC爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UFC爱好者.png"; sourceTree = "<group>"; };
+		C6C602AE250E413F00E7D56A /* 网球王子.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网球王子.png"; sourceTree = "<group>"; };
+		C6C602AF250E413F00E7D56A /* 东南亚海岛迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东南亚海岛迷.png"; sourceTree = "<group>"; };
+		C6C602B0250E413F00E7D56A /* 粤语剧集爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "粤语剧集爱好者.png"; sourceTree = "<group>"; };
+		C6C602B1250E413F00E7D56A /* 灌篮高手.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灌篮高手.png"; sourceTree = "<group>"; };
+		C6C602B2250E413F00E7D56A /* 蹦极迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蹦极迷.png"; sourceTree = "<group>"; };
+		C6C602B3250E413F00E7D56A /* 登山迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登山迷.png"; sourceTree = "<group>"; };
+		C6C602B4250E413F00E7D56A /* 咏春拳.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "咏春拳.png"; sourceTree = "<group>"; };
+		C6C602B5250E413F00E7D56A /* 灯饰粉丝迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯饰粉丝迷.png"; sourceTree = "<group>"; };
+		C6C602B6250E413F00E7D56A /* 狗狗俱乐部.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "狗狗俱乐部.png"; sourceTree = "<group>"; };
+		C6C602B7250E413F00E7D56A /* 长跑爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "长跑爱好者.png"; sourceTree = "<group>"; };
+		C6C602B8250E413F00E7D56A /* 日出迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日出迷.png"; sourceTree = "<group>"; };
+		C6C602B9250E413F00E7D56A /* 我的英雄学院.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的英雄学院.png"; sourceTree = "<group>"; };
+		C6C602BA250E413F00E7D56A /* 面食者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面食者.png"; sourceTree = "<group>"; };
+		C6C602BB250E413F00E7D56A /* 街舞爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "街舞爱好者.png"; sourceTree = "<group>"; };
+		C6C602BC250E413F00E7D56A /* 极限爱好者.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "极限爱好者.png"; sourceTree = "<group>"; };
+		C6C602BD250E413F00E7D56A /* 游戏机迷.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "游戏机迷.png"; sourceTree = "<group>"; };
+		C6CE291224B03917003ADE43 /* 蒙古拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "蒙古拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CE291524B03917003ADE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6CE291624B03917003ADE43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6CE291F24B03917003ADE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6CE292124B03918003ADE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6CE292424B03918003ADE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6CE292624B03918003ADE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CE292724B03918003ADE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6CE292D24B03918003ADE43 /* MeiJuLoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiJuLoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CE293124B03918003ADE43 /* MeiJuLoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiJuLoverTests.m; sourceTree = "<group>"; };
+		C6CE293324B03918003ADE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CE293824B03918003ADE43 /* MeiJuLoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeiJuLoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6CE293C24B03918003ADE43 /* MeiJuLoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiJuLoverUITests.m; sourceTree = "<group>"; };
+		C6CE293E24B03918003ADE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6CE2EF324B0B526003ADE43 /* MJNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJNavigationController.h; sourceTree = "<group>"; };
+		C6CE2EF424B0B526003ADE43 /* MJNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJNavigationController.m; sourceTree = "<group>"; };
+		C6CE2EF624B0B534003ADE43 /* MJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJBaseViewController.h; sourceTree = "<group>"; };
+		C6CE2EF724B0B534003ADE43 /* MJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJBaseViewController.m; sourceTree = "<group>"; };
+		C6CE2EF924B0B548003ADE43 /* MJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJTabBarController.h; sourceTree = "<group>"; };
+		C6CE2EFA24B0B548003ADE43 /* MJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJTabBarController.m; sourceTree = "<group>"; };
+		C6CE2EFC24B0B559003ADE43 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		C6CE2EFD24B0B559003ADE43 /* MBProgressHUD+WJTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WJTools.h"; sourceTree = "<group>"; };
+		C6CE2EFE24B0B559003ADE43 /* MBProgressHUD+WJTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WJTools.m"; sourceTree = "<group>"; };
+		C6CE2EFF24B0B559003ADE43 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		C6CE2F0224B0B563003ADE43 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C6CE2F0324B0B563003ADE43 /* WeakDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakDefines.h; sourceTree = "<group>"; };
+		C6CE2F0424B0B563003ADE43 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		DB2B07DF1880FC0000C7AA7E /* Pods-MeiJuLoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLoverTests.release.xcconfig"; path = "Target Support Files/Pods-MeiJuLoverTests/Pods-MeiJuLoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		F816C77F48895D51D64D7DE7 /* Pods-MeiJuLoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeiJuLoverTests.debug.xcconfig"; path = "Target Support Files/Pods-MeiJuLoverTests/Pods-MeiJuLoverTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6CE290F24B03917003ADE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6701DEBE413339E4B0EE474C /* Pods_MeiJuLover.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE292A24B03918003ADE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CCE0FDF4FF894C4BCC6463 /* Pods_MeiJuLoverTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE293524B03918003ADE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B390159C2BE67B2A27650F /* Pods_MeiJuLover_MeiJuLoverUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30CFF5272DD8B94FD2CED686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C505DC89B3A53846A67BABFC /* Pods_MeiJuLover.framework */,
+				C3FB2691B58CE03B243E585A /* Pods_MeiJuLover_MeiJuLoverUITests.framework */,
+				92B6CFA1B70EFB89487845B2 /* Pods_MeiJuLoverTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		480EFB336F7F41881FA02D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F68A33E01039BEA3F3426E /* Pods-MeiJuLover.debug.xcconfig */,
+				753864C2C24E28A9C66D294C /* Pods-MeiJuLover.release.xcconfig */,
+				18C79DF4F7C111CEB8DD7187 /* Pods-MeiJuLover-MeiJuLoverUITests.debug.xcconfig */,
+				493A7C6E0D459D2AEE7A3859 /* Pods-MeiJuLover-MeiJuLoverUITests.release.xcconfig */,
+				F816C77F48895D51D64D7DE7 /* Pods-MeiJuLoverTests.debug.xcconfig */,
+				DB2B07DF1880FC0000C7AA7E /* Pods-MeiJuLoverTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C60327932506499800335011 /* QDView */ = {
+			isa = PBXGroup;
+			children = (
+				C6032797250649BE00335011 /* PacketageView */,
+				C6032794250649AC00335011 /* MJQDViewController.h */,
+				C6032795250649AC00335011 /* MJQDViewController.m */,
+			);
+			path = QDView;
+			sourceTree = "<group>";
+		};
+		C6032797250649BE00335011 /* PacketageView */ = {
+			isa = PBXGroup;
+			children = (
+				C6032798250649BE00335011 /* LaunchView.m */,
+				C6032799250649BE00335011 /* LaunchView.h */,
+			);
+			path = PacketageView;
+			sourceTree = "<group>";
+		};
+		C603279B250649CF00335011 /* XMImageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				C603279C250649CF00335011 /* YHImageEditVC.h */,
+				C603279D250649CF00335011 /* YHPhotoSelect */,
+				C60327A0250649CF00335011 /* YHCropView */,
+				C60327A7250649CF00335011 /* YHImageEditVC.m */,
+			);
+			path = XMImageEdit;
+			sourceTree = "<group>";
+		};
+		C603279D250649CF00335011 /* YHPhotoSelect */ = {
+			isa = PBXGroup;
+			children = (
+				C603279E250649CF00335011 /* YHPhotoSelect.h */,
+				C603279F250649CF00335011 /* YHPhotoSelect.m */,
+			);
+			path = YHPhotoSelect;
+			sourceTree = "<group>";
+		};
+		C60327A0250649CF00335011 /* YHCropView */ = {
+			isa = PBXGroup;
+			children = (
+				C60327A1250649CF00335011 /* YHResizeView.h */,
+				C60327A2250649CF00335011 /* YHCropRectView.h */,
+				C60327A3250649CF00335011 /* YHCropView.h */,
+				C60327A4250649CF00335011 /* YHResizeView.m */,
+				C60327A5250649CF00335011 /* YHCropView.m */,
+				C60327A6250649CF00335011 /* YHCropRectView.m */,
+			);
+			path = YHCropView;
+			sourceTree = "<group>";
+		};
+		C60327A8250649CF00335011 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				C60327A9250649CF00335011 /* CWCarousel.m */,
+				C60327AA250649CF00335011 /* CWCarouselHeader.h */,
+				C60327AB250649CF00335011 /* CWPageControl.m */,
+				C60327AC250649CF00335011 /* CWFlowLayout.m */,
+				C60327AD250649CF00335011 /* CWCarouselProtocol.h */,
+				C60327AE250649CF00335011 /* CWCarousel.h */,
+				C60327AF250649CF00335011 /* CWPageControl.h */,
+				C60327B0250649CF00335011 /* CWFlowLayout.h */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		C60327B1250649CF00335011 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C60327B2250649CF00335011 /* SVRadialGradientLayer.m */,
+				C60327B3250649CF00335011 /* SVIndefiniteAnimatedView.h */,
+				C60327B4250649CF00335011 /* SVProgressHUD.h */,
+				C60327B5250649CF00335011 /* SVProgressAnimatedView.m */,
+				C60327B6250649CF00335011 /* SVProgressHUD-Prefix.pch */,
+				C60327B7250649CF00335011 /* SVRadialGradientLayer.h */,
+				C60327B8250649CF00335011 /* SVProgressHUD.m */,
+				C60327B9250649CF00335011 /* SVIndefiniteAnimatedView.m */,
+				C60327BA250649CF00335011 /* SVProgressHUD.bundle */,
+				C60327BB250649CF00335011 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		C60327CF25064A8900335011 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C60327D325064C4A00335011 /* Views */,
+				C60327D025064A9300335011 /* MJHomeViewController.h */,
+				C60327D125064A9300335011 /* MJHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C60327D325064C4A00335011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C60327D425064C5E00335011 /* MJHomeTableViewCell.h */,
+				C60327D525064C5E00335011 /* MJHomeTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C60327D725064E1100335011 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		C60327D825064E1800335011 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C60327DC25064EF800335011 /* BaseBriefView.h */,
+				C60327DD25064EF800335011 /* BaseBriefView.m */,
+				C60327D925064EE400335011 /* MJDetailViewController.h */,
+				C60327DA25064EE400335011 /* MJDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C6C601D5250E413E00E7D56A /* logo(5) */ = {
+			isa = PBXGroup;
+			children = (
+				C6C601D6250E413E00E7D56A /* 58 */,
+				C6C601F3250E413F00E7D56A /* 60 */,
+				C6C60210250E413F00E7D56A /* 180 */,
+				C6C6022D250E413F00E7D56A /* 87 */,
+				C6C6024A250E413F00E7D56A /* 80 */,
+				C6C60267250E413F00E7D56A /* 120 */,
+				C6C60284250E413F00E7D56A /* 40 */,
+				C6C602A1250E413F00E7D56A /* 1024 */,
+			);
+			path = "logo(5)";
+			sourceTree = "<group>";
+		};
+		C6C601D6250E413E00E7D56A /* 58 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C601D7250E413E00E7D56A /* 美剧爱好者.png */,
+				C6C601D8250E413E00E7D56A /* 火锅爱好者.png */,
+				C6C601D9250E413E00E7D56A /* 爱辣.png */,
+				C6C601DA250E413E00E7D56A /* 中国小吃.png */,
+				C6C601DB250E413E00E7D56A /* 太极拳.png */,
+				C6C601DC250E413E00E7D56A /* 广州小吃.png */,
+				C6C601DD250E413E00E7D56A /* 羽毛球爱好者.png */,
+				C6C601DE250E413E00E7D56A /* 广州旅游.png */,
+				C6C601DF250E413E00E7D56A /* 桌游迷.png */,
+				C6C601E0250E413E00E7D56A /* 潮汕小食圈.png */,
+				C6C601E1250E413E00E7D56A /* 露营迷.png */,
+				C6C601E2250E413E00E7D56A /* UFC爱好者.png */,
+				C6C601E3250E413F00E7D56A /* 网球王子.png */,
+				C6C601E4250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C601E5250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C601E6250E413F00E7D56A /* 灌篮高手.png */,
+				C6C601E7250E413F00E7D56A /* 蹦极迷.png */,
+				C6C601E8250E413F00E7D56A /* 登山迷.png */,
+				C6C601E9250E413F00E7D56A /* 咏春拳.png */,
+				C6C601EA250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C601EB250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C601EC250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C601ED250E413F00E7D56A /* 日出迷.png */,
+				C6C601EE250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C601EF250E413F00E7D56A /* 面食者.png */,
+				C6C601F0250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C601F1250E413F00E7D56A /* 极限爱好者.png */,
+				C6C601F2250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 58;
+			sourceTree = "<group>";
+		};
+		C6C601F3250E413F00E7D56A /* 60 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C601F4250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C601F5250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C601F6250E413F00E7D56A /* 爱辣.png */,
+				C6C601F7250E413F00E7D56A /* 中国小吃.png */,
+				C6C601F8250E413F00E7D56A /* 太极拳.png */,
+				C6C601F9250E413F00E7D56A /* 广州小吃.png */,
+				C6C601FA250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C601FB250E413F00E7D56A /* 广州旅游.png */,
+				C6C601FC250E413F00E7D56A /* 桌游迷.png */,
+				C6C601FD250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C601FE250E413F00E7D56A /* 露营迷.png */,
+				C6C601FF250E413F00E7D56A /* UFC爱好者.png */,
+				C6C60200250E413F00E7D56A /* 网球王子.png */,
+				C6C60201250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C60202250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C60203250E413F00E7D56A /* 灌篮高手.png */,
+				C6C60204250E413F00E7D56A /* 蹦极迷.png */,
+				C6C60205250E413F00E7D56A /* 登山迷.png */,
+				C6C60206250E413F00E7D56A /* 咏春拳.png */,
+				C6C60207250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C60208250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C60209250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C6020A250E413F00E7D56A /* 日出迷.png */,
+				C6C6020B250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C6020C250E413F00E7D56A /* 面食者.png */,
+				C6C6020D250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C6020E250E413F00E7D56A /* 极限爱好者.png */,
+				C6C6020F250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 60;
+			sourceTree = "<group>";
+		};
+		C6C60210250E413F00E7D56A /* 180 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C60211250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C60212250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C60213250E413F00E7D56A /* 爱辣.png */,
+				C6C60214250E413F00E7D56A /* 中国小吃.png */,
+				C6C60215250E413F00E7D56A /* 太极拳.png */,
+				C6C60216250E413F00E7D56A /* 广州小吃.png */,
+				C6C60217250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C60218250E413F00E7D56A /* 广州旅游.png */,
+				C6C60219250E413F00E7D56A /* 桌游迷.png */,
+				C6C6021A250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C6021B250E413F00E7D56A /* 露营迷.png */,
+				C6C6021C250E413F00E7D56A /* UFC爱好者.png */,
+				C6C6021D250E413F00E7D56A /* 网球王子.png */,
+				C6C6021E250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C6021F250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C60220250E413F00E7D56A /* 灌篮高手.png */,
+				C6C60221250E413F00E7D56A /* 蹦极迷.png */,
+				C6C60222250E413F00E7D56A /* 登山迷.png */,
+				C6C60223250E413F00E7D56A /* 咏春拳.png */,
+				C6C60224250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C60225250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C60226250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C60227250E413F00E7D56A /* 日出迷.png */,
+				C6C60228250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C60229250E413F00E7D56A /* 面食者.png */,
+				C6C6022A250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C6022B250E413F00E7D56A /* 极限爱好者.png */,
+				C6C6022C250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 180;
+			sourceTree = "<group>";
+		};
+		C6C6022D250E413F00E7D56A /* 87 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C6022E250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C6022F250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C60230250E413F00E7D56A /* 爱辣.png */,
+				C6C60231250E413F00E7D56A /* 中国小吃.png */,
+				C6C60232250E413F00E7D56A /* 太极拳.png */,
+				C6C60233250E413F00E7D56A /* 广州小吃.png */,
+				C6C60234250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C60235250E413F00E7D56A /* 广州旅游.png */,
+				C6C60236250E413F00E7D56A /* 桌游迷.png */,
+				C6C60237250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C60238250E413F00E7D56A /* 露营迷.png */,
+				C6C60239250E413F00E7D56A /* UFC爱好者.png */,
+				C6C6023A250E413F00E7D56A /* 网球王子.png */,
+				C6C6023B250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C6023C250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C6023D250E413F00E7D56A /* 灌篮高手.png */,
+				C6C6023E250E413F00E7D56A /* 蹦极迷.png */,
+				C6C6023F250E413F00E7D56A /* 登山迷.png */,
+				C6C60240250E413F00E7D56A /* 咏春拳.png */,
+				C6C60241250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C60242250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C60243250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C60244250E413F00E7D56A /* 日出迷.png */,
+				C6C60245250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C60246250E413F00E7D56A /* 面食者.png */,
+				C6C60247250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C60248250E413F00E7D56A /* 极限爱好者.png */,
+				C6C60249250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 87;
+			sourceTree = "<group>";
+		};
+		C6C6024A250E413F00E7D56A /* 80 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C6024B250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C6024C250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C6024D250E413F00E7D56A /* 爱辣.png */,
+				C6C6024E250E413F00E7D56A /* 中国小吃.png */,
+				C6C6024F250E413F00E7D56A /* 太极拳.png */,
+				C6C60250250E413F00E7D56A /* 广州小吃.png */,
+				C6C60251250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C60252250E413F00E7D56A /* 广州旅游.png */,
+				C6C60253250E413F00E7D56A /* 桌游迷.png */,
+				C6C60254250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C60255250E413F00E7D56A /* 露营迷.png */,
+				C6C60256250E413F00E7D56A /* UFC爱好者.png */,
+				C6C60257250E413F00E7D56A /* 网球王子.png */,
+				C6C60258250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C60259250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C6025A250E413F00E7D56A /* 灌篮高手.png */,
+				C6C6025B250E413F00E7D56A /* 蹦极迷.png */,
+				C6C6025C250E413F00E7D56A /* 登山迷.png */,
+				C6C6025D250E413F00E7D56A /* 咏春拳.png */,
+				C6C6025E250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C6025F250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C60260250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C60261250E413F00E7D56A /* 日出迷.png */,
+				C6C60262250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C60263250E413F00E7D56A /* 面食者.png */,
+				C6C60264250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C60265250E413F00E7D56A /* 极限爱好者.png */,
+				C6C60266250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 80;
+			sourceTree = "<group>";
+		};
+		C6C60267250E413F00E7D56A /* 120 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C60268250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C60269250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C6026A250E413F00E7D56A /* 爱辣.png */,
+				C6C6026B250E413F00E7D56A /* 中国小吃.png */,
+				C6C6026C250E413F00E7D56A /* 太极拳.png */,
+				C6C6026D250E413F00E7D56A /* 广州小吃.png */,
+				C6C6026E250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C6026F250E413F00E7D56A /* 广州旅游.png */,
+				C6C60270250E413F00E7D56A /* 桌游迷.png */,
+				C6C60271250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C60272250E413F00E7D56A /* 露营迷.png */,
+				C6C60273250E413F00E7D56A /* UFC爱好者.png */,
+				C6C60274250E413F00E7D56A /* 网球王子.png */,
+				C6C60275250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C60276250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C60277250E413F00E7D56A /* 灌篮高手.png */,
+				C6C60278250E413F00E7D56A /* 蹦极迷.png */,
+				C6C60279250E413F00E7D56A /* 登山迷.png */,
+				C6C6027A250E413F00E7D56A /* 咏春拳.png */,
+				C6C6027B250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C6027C250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C6027D250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C6027E250E413F00E7D56A /* 日出迷.png */,
+				C6C6027F250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C60280250E413F00E7D56A /* 面食者.png */,
+				C6C60281250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C60282250E413F00E7D56A /* 极限爱好者.png */,
+				C6C60283250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 120;
+			sourceTree = "<group>";
+		};
+		C6C60284250E413F00E7D56A /* 40 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C60285250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C60286250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C60287250E413F00E7D56A /* 爱辣.png */,
+				C6C60288250E413F00E7D56A /* 中国小吃.png */,
+				C6C60289250E413F00E7D56A /* 太极拳.png */,
+				C6C6028A250E413F00E7D56A /* 广州小吃.png */,
+				C6C6028B250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C6028C250E413F00E7D56A /* 广州旅游.png */,
+				C6C6028D250E413F00E7D56A /* 桌游迷.png */,
+				C6C6028E250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C6028F250E413F00E7D56A /* 露营迷.png */,
+				C6C60290250E413F00E7D56A /* UFC爱好者.png */,
+				C6C60291250E413F00E7D56A /* 网球王子.png */,
+				C6C60292250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C60293250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C60294250E413F00E7D56A /* 灌篮高手.png */,
+				C6C60295250E413F00E7D56A /* 蹦极迷.png */,
+				C6C60296250E413F00E7D56A /* 登山迷.png */,
+				C6C60297250E413F00E7D56A /* 咏春拳.png */,
+				C6C60298250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C60299250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C6029A250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C6029B250E413F00E7D56A /* 日出迷.png */,
+				C6C6029C250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C6029D250E413F00E7D56A /* 面食者.png */,
+				C6C6029E250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C6029F250E413F00E7D56A /* 极限爱好者.png */,
+				C6C602A0250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 40;
+			sourceTree = "<group>";
+		};
+		C6C602A1250E413F00E7D56A /* 1024 */ = {
+			isa = PBXGroup;
+			children = (
+				C6C602A2250E413F00E7D56A /* 美剧爱好者.png */,
+				C6C602A3250E413F00E7D56A /* 火锅爱好者.png */,
+				C6C602A4250E413F00E7D56A /* 爱辣.png */,
+				C6C602A5250E413F00E7D56A /* 中国小吃.png */,
+				C6C602A6250E413F00E7D56A /* 太极拳.png */,
+				C6C602A7250E413F00E7D56A /* 广州小吃.png */,
+				C6C602A8250E413F00E7D56A /* 羽毛球爱好者.png */,
+				C6C602A9250E413F00E7D56A /* 广州旅游.png */,
+				C6C602AA250E413F00E7D56A /* 桌游迷.png */,
+				C6C602AB250E413F00E7D56A /* 潮汕小食圈.png */,
+				C6C602AC250E413F00E7D56A /* 露营迷.png */,
+				C6C602AD250E413F00E7D56A /* UFC爱好者.png */,
+				C6C602AE250E413F00E7D56A /* 网球王子.png */,
+				C6C602AF250E413F00E7D56A /* 东南亚海岛迷.png */,
+				C6C602B0250E413F00E7D56A /* 粤语剧集爱好者.png */,
+				C6C602B1250E413F00E7D56A /* 灌篮高手.png */,
+				C6C602B2250E413F00E7D56A /* 蹦极迷.png */,
+				C6C602B3250E413F00E7D56A /* 登山迷.png */,
+				C6C602B4250E413F00E7D56A /* 咏春拳.png */,
+				C6C602B5250E413F00E7D56A /* 灯饰粉丝迷.png */,
+				C6C602B6250E413F00E7D56A /* 狗狗俱乐部.png */,
+				C6C602B7250E413F00E7D56A /* 长跑爱好者.png */,
+				C6C602B8250E413F00E7D56A /* 日出迷.png */,
+				C6C602B9250E413F00E7D56A /* 我的英雄学院.png */,
+				C6C602BA250E413F00E7D56A /* 面食者.png */,
+				C6C602BB250E413F00E7D56A /* 街舞爱好者.png */,
+				C6C602BC250E413F00E7D56A /* 极限爱好者.png */,
+				C6C602BD250E413F00E7D56A /* 游戏机迷.png */,
+			);
+			path = 1024;
+			sourceTree = "<group>";
+		};
+		C6CE290924B03917003ADE43 = {
+			isa = PBXGroup;
+			children = (
+				C6CE291424B03917003ADE43 /* MeiJuLover */,
+				C6CE293024B03918003ADE43 /* MeiJuLoverTests */,
+				C6CE293B24B03918003ADE43 /* MeiJuLoverUITests */,
+				C6CE291324B03917003ADE43 /* Products */,
+				480EFB336F7F41881FA02D72 /* Pods */,
+				30CFF5272DD8B94FD2CED686 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6CE291324B03917003ADE43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE291224B03917003ADE43 /* 蒙古拍.app */,
+				C6CE292D24B03918003ADE43 /* MeiJuLoverTests.xctest */,
+				C6CE293824B03918003ADE43 /* MeiJuLoverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CE291424B03917003ADE43 /* MeiJuLover */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE291524B03917003ADE43 /* AppDelegate.h */,
+				C6CE291624B03917003ADE43 /* AppDelegate.m */,
+				C6CE2EF124B0B4FE003ADE43 /* Classes */,
+				C6CE2D7924B061A1003ADE43 /* Common */,
+				C6CE291E24B03917003ADE43 /* Main.storyboard */,
+				C6CE292124B03918003ADE43 /* Assets.xcassets */,
+				C6CE292324B03918003ADE43 /* LaunchScreen.storyboard */,
+				C6CE292624B03918003ADE43 /* Info.plist */,
+				C6CE292724B03918003ADE43 /* main.m */,
+			);
+			path = MeiJuLover;
+			sourceTree = "<group>";
+		};
+		C6CE293024B03918003ADE43 /* MeiJuLoverTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE293124B03918003ADE43 /* MeiJuLoverTests.m */,
+				C6CE293324B03918003ADE43 /* Info.plist */,
+			);
+			path = MeiJuLoverTests;
+			sourceTree = "<group>";
+		};
+		C6CE293B24B03918003ADE43 /* MeiJuLoverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE293C24B03918003ADE43 /* MeiJuLoverUITests.m */,
+				C6CE293E24B03918003ADE43 /* Info.plist */,
+			);
+			path = MeiJuLoverUITests;
+			sourceTree = "<group>";
+		};
+		C6CE2D7924B061A1003ADE43 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE2D7A24B061A1003ADE43 /* Vendors */,
+				C6CE2D7B24B061A1003ADE43 /* Category */,
+				C6CE2D7C24B061A1003ADE43 /* Marcos */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C6CE2D7A24B061A1003ADE43 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				C60327A8250649CF00335011 /* Carousel */,
+				C60327B1250649CF00335011 /* SVProgressHUD */,
+				C603279B250649CF00335011 /* XMImageEdit */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C6CE2D7B24B061A1003ADE43 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE2EFD24B0B559003ADE43 /* MBProgressHUD+WJTools.h */,
+				C6CE2EFE24B0B559003ADE43 /* MBProgressHUD+WJTools.m */,
+				C60327CA25064A2400335011 /* PermissionUtils.h */,
+				C60327C925064A2300335011 /* PermissionUtils.m */,
+				C60327CC25064A3000335011 /* UIViewController+XMAdd.h */,
+				C60327CD25064A3000335011 /* UIViewController+XMAdd.m */,
+				C6CE2EFC24B0B559003ADE43 /* UIColor+Additions.h */,
+				C6CE2EFF24B0B559003ADE43 /* UIColor+Additions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C6CE2D7C24B061A1003ADE43 /* Marcos */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE2F0424B0B563003ADE43 /* Macros.h */,
+				C6CE2F0224B0B563003ADE43 /* PrefixHeader.pch */,
+				C6CE2F0324B0B563003ADE43 /* WeakDefines.h */,
+			);
+			path = Marcos;
+			sourceTree = "<group>";
+		};
+		C6CE2EF124B0B4FE003ADE43 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6C601D5250E413E00E7D56A /* logo(5) */,
+				C60327D825064E1800335011 /* Detail */,
+				C60327D725064E1100335011 /* Scan */,
+				C60327CF25064A8900335011 /* Home */,
+				C60327932506499800335011 /* QDView */,
+				C6CE2EF224B0B512003ADE43 /* Base */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C6CE2EF224B0B512003ADE43 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C6CE2EF324B0B526003ADE43 /* MJNavigationController.h */,
+				C6CE2EF424B0B526003ADE43 /* MJNavigationController.m */,
+				C6CE2EF624B0B534003ADE43 /* MJBaseViewController.h */,
+				C6CE2EF724B0B534003ADE43 /* MJBaseViewController.m */,
+				C6CE2EF924B0B548003ADE43 /* MJTabBarController.h */,
+				C6CE2EFA24B0B548003ADE43 /* MJTabBarController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6CE291124B03917003ADE43 /* MeiJuLover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CE294124B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLover" */;
+			buildPhases = (
+				EFE0FC7AB85F4E87333A6229 /* [CP] Check Pods Manifest.lock */,
+				C6CE290E24B03917003ADE43 /* Sources */,
+				C6CE290F24B03917003ADE43 /* Frameworks */,
+				C6CE291024B03917003ADE43 /* Resources */,
+				CADA72E98D56765445BCB6AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeiJuLover;
+			productName = MeiJuLover;
+			productReference = C6CE291224B03917003ADE43 /* 蒙古拍.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6CE292C24B03918003ADE43 /* MeiJuLoverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CE294424B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLoverTests" */;
+			buildPhases = (
+				AAA41E3926D74EDC0D6450EE /* [CP] Check Pods Manifest.lock */,
+				C6CE292924B03918003ADE43 /* Sources */,
+				C6CE292A24B03918003ADE43 /* Frameworks */,
+				C6CE292B24B03918003ADE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CE292F24B03918003ADE43 /* PBXTargetDependency */,
+			);
+			name = MeiJuLoverTests;
+			productName = MeiJuLoverTests;
+			productReference = C6CE292D24B03918003ADE43 /* MeiJuLoverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6CE293724B03918003ADE43 /* MeiJuLoverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6CE294724B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLoverUITests" */;
+			buildPhases = (
+				C8906C5FFF73CD6EBB4F41EB /* [CP] Check Pods Manifest.lock */,
+				C6CE293424B03918003ADE43 /* Sources */,
+				C6CE293524B03918003ADE43 /* Frameworks */,
+				C6CE293624B03918003ADE43 /* Resources */,
+				FB40477ABB949F5F11885FE0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6CE293A24B03918003ADE43 /* PBXTargetDependency */,
+			);
+			name = MeiJuLoverUITests;
+			productName = MeiJuLoverUITests;
+			productReference = C6CE293824B03918003ADE43 /* MeiJuLoverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6CE290A24B03917003ADE43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = sport;
+				TargetAttributes = {
+					C6CE291124B03917003ADE43 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C6CE292C24B03918003ADE43 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C6CE291124B03917003ADE43;
+					};
+					C6CE293724B03918003ADE43 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C6CE291124B03917003ADE43;
+					};
+				};
+			};
+			buildConfigurationList = C6CE290D24B03917003ADE43 /* Build configuration list for PBXProject "MeiJuLover" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6CE290924B03917003ADE43;
+			productRefGroup = C6CE291324B03917003ADE43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6CE291124B03917003ADE43 /* MeiJuLover */,
+				C6CE292C24B03918003ADE43 /* MeiJuLoverTests */,
+				C6CE293724B03918003ADE43 /* MeiJuLoverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6CE291024B03917003ADE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C60380250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C60370250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C602F4250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C60327250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C60304250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C602E4250E414000E7D56A /* 露营迷.png in Resources */,
+				C6CE292524B03918003ADE43 /* LaunchScreen.storyboard in Resources */,
+				C6C6034B250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C60377250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C6037E250E414000E7D56A /* 面食者.png in Resources */,
+				C6C60372250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C602F7250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C6031A250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C602D2250E413F00E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C60362250E414000E7D56A /* 面食者.png in Resources */,
+				C6C602CF250E413F00E7D56A /* 登山迷.png in Resources */,
+				C6C60364250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C6037B250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C6036A250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60381250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C60328250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C6039C250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C60315250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C6035C250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C602E0250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C60334250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C60305250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C60360250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C60339250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C6036F250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C60344250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C60326250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C60396250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C6033C250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C602FF250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C60392250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C6032E250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C602FA250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60355250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C6037F250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C60389250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C60317250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C60333250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C6034F250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C60368250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C602DB250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C602CC250E413F00E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C60313250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C602F1250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C6035E250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C60310250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C60352250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C6030F250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C6035B250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C60357250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60300250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C60346250E414000E7D56A /* 面食者.png in Resources */,
+				C6C602CB250E413F00E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60375250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C60383250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C60319250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C60308250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C60384250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C60324250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C60390250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C602BF250E413F00E7D56A /* 火锅爱好者.png in Resources */,
+				C6C602C0250E413F00E7D56A /* 爱辣.png in Resources */,
+				C6C6038A250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C602D5250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C6032D250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C6038E250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C60318250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C60316250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60306250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C60347250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C6031E250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C60323250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C6035D250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C6031C250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C602D0250E413F00E7D56A /* 咏春拳.png in Resources */,
+				C6C60322250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C602EA250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C6032A250E414000E7D56A /* 面食者.png in Resources */,
+				C6C6039B250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C602C8250E413F00E7D56A /* 露营迷.png in Resources */,
+				C6C6036C250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C60349250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C6034E250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60361250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C6036D250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C60309250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C60363250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C6035F250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C60311250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C6038C250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C602DD250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C602EC250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C602D8250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C6032F250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C602D6250E414000E7D56A /* 面食者.png in Resources */,
+				C6C602D3250E413F00E7D56A /* 长跑爱好者.png in Resources */,
+				C6C60341250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C602E7250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60397250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C6034D250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C6030E250E414000E7D56A /* 面食者.png in Resources */,
+				C6C60371250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C6036E250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C60395250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C602ED250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C6037C250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C6039D250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6CE292224B03918003ADE43 /* Assets.xcassets in Resources */,
+				C6C602E2250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C60332250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60393250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C602DF250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C602C3250E413F00E7D56A /* 广州小吃.png in Resources */,
+				C6C60376250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C602CD250E413F00E7D56A /* 灌篮高手.png in Resources */,
+				C6C602E3250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C6031B250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C602DE250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60382250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C60388250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C602FC250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C60342250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6CE292024B03917003ADE43 /* Main.storyboard in Resources */,
+				C6C6031F250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60366250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C6030C250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C6034C250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C60329250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C602EB250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C60359250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C602D7250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C6033E250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C60369250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C60335250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C6030A250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C6037D250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C60331250E414000E7D56A /* 中国小吃.png in Resources */,
+				C60327C8250649CF00335011 /* SVProgressHUD.bundle in Resources */,
+				C6C6030B250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C602E6250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C602D9250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C60367250E414000E7D56A /* 火锅爱好者.png in Resources */,
+				C6C60348250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C602F8250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C60307250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C602D4250E413F00E7D56A /* 日出迷.png in Resources */,
+				C6C60338250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C602C7250E413F00E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C60336250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C6033D250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C60374250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C602CE250E413F00E7D56A /* 蹦极迷.png in Resources */,
+				C6C602F5250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C6038B250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C60387250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C60301250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C60343250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C602C2250E413F00E7D56A /* 太极拳.png in Resources */,
+				C6C60354250E414000E7D56A /* 露营迷.png in Resources */,
+				C6C60312250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C602E1250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C60303250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60314250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C60391250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C60350250E414000E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C602D1250E413F00E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C60340250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C602C4250E413F00E7D56A /* 羽毛球爱好者.png in Resources */,
+				C6C6034A250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C6039A250E414000E7D56A /* 面食者.png in Resources */,
+				C6C6033B250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C6032C250E414000E7D56A /* 极限爱好者.png in Resources */,
+				C6C60302250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C602FE250E414000E7D56A /* 桌游迷.png in Resources */,
+				C6C60399250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C60358250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C6032B250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C6030D250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C60356250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C602C5250E413F00E7D56A /* 广州旅游.png in Resources */,
+				C6C6038F250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C602DA250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C60385250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C6035A250E414000E7D56A /* 蹦极迷.png in Resources */,
+				C6C602BE250E413F00E7D56A /* 美剧爱好者.png in Resources */,
+				C6C6033A250E414000E7D56A /* 网球王子.png in Resources */,
+				C6C602F2250E414000E7D56A /* 面食者.png in Resources */,
+				C6C6038D250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C60373250E414000E7D56A /* 东南亚海岛迷.png in Resources */,
+				C6C60325250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C60337250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C6037A250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C602E9250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C60345250E414000E7D56A /* 我的英雄学院.png in Resources */,
+				C6C60378250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C60330250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C60353250E414000E7D56A /* 潮汕小食圈.png in Resources */,
+				C6C60365250E414000E7D56A /* 游戏机迷.png in Resources */,
+				C6C602FD250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C602DC250E414000E7D56A /* 爱辣.png in Resources */,
+				C6C6033F250E414000E7D56A /* 登山迷.png in Resources */,
+				C6C60394250E414000E7D56A /* 咏春拳.png in Resources */,
+				C6C60321250E414000E7D56A /* 灌篮高手.png in Resources */,
+				C6C602EE250E414000E7D56A /* 狗狗俱乐部.png in Resources */,
+				C6C60386250E414000E7D56A /* 太极拳.png in Resources */,
+				C6C60320250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+				C6C602EF250E414000E7D56A /* 长跑爱好者.png in Resources */,
+				C6C602CA250E413F00E7D56A /* 网球王子.png in Resources */,
+				C6C602F9250E414000E7D56A /* 中国小吃.png in Resources */,
+				C6C6031D250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C602C6250E413F00E7D56A /* 桌游迷.png in Resources */,
+				C6C602C9250E413F00E7D56A /* UFC爱好者.png in Resources */,
+				C6C60398250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C602E5250E414000E7D56A /* UFC爱好者.png in Resources */,
+				C6C602FB250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C60379250E414000E7D56A /* 灯饰粉丝迷.png in Resources */,
+				C6C602F6250E414000E7D56A /* 美剧爱好者.png in Resources */,
+				C6C6036B250E414000E7D56A /* 广州小吃.png in Resources */,
+				C6C602C1250E413F00E7D56A /* 中国小吃.png in Resources */,
+				C6C602F0250E414000E7D56A /* 日出迷.png in Resources */,
+				C6C60351250E414000E7D56A /* 广州旅游.png in Resources */,
+				C6C602F3250E414000E7D56A /* 街舞爱好者.png in Resources */,
+				C6C602E8250E414000E7D56A /* 粤语剧集爱好者.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE292B24B03918003ADE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE293624B03918003ADE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAA41E3926D74EDC0D6450EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeiJuLoverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8906C5FFF73CD6EBB4F41EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeiJuLover-MeiJuLoverUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADA72E98D56765445BCB6AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover/Pods-MeiJuLover-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover/Pods-MeiJuLover-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover/Pods-MeiJuLover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFE0FC7AB85F4E87333A6229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeiJuLover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB40477ABB949F5F11885FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover-MeiJuLoverUITests/Pods-MeiJuLover-MeiJuLoverUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover-MeiJuLoverUITests/Pods-MeiJuLover-MeiJuLoverUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeiJuLover-MeiJuLoverUITests/Pods-MeiJuLover-MeiJuLoverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6CE290E24B03917003ADE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60327D225064A9300335011 /* MJHomeViewController.m in Sources */,
+				C60327BD250649CF00335011 /* YHResizeView.m in Sources */,
+				C60327C4250649CF00335011 /* SVRadialGradientLayer.m in Sources */,
+				C6CE291724B03917003ADE43 /* AppDelegate.m in Sources */,
+				C60327C2250649CF00335011 /* CWPageControl.m in Sources */,
+				C60327BC250649CF00335011 /* YHPhotoSelect.m in Sources */,
+				C60327DE25064EF800335011 /* BaseBriefView.m in Sources */,
+				C60327C7250649CF00335011 /* SVIndefiniteAnimatedView.m in Sources */,
+				C60327C0250649CF00335011 /* YHImageEditVC.m in Sources */,
+				C60327C1250649CF00335011 /* CWCarousel.m in Sources */,
+				C60327BE250649CF00335011 /* YHCropView.m in Sources */,
+				C603279A250649BE00335011 /* LaunchView.m in Sources */,
+				C6CE2F0124B0B559003ADE43 /* UIColor+Additions.m in Sources */,
+				C60327C5250649CF00335011 /* SVProgressAnimatedView.m in Sources */,
+				C60327CE25064A3000335011 /* UIViewController+XMAdd.m in Sources */,
+				C6032796250649AC00335011 /* MJQDViewController.m in Sources */,
+				C6CE2EFB24B0B548003ADE43 /* MJTabBarController.m in Sources */,
+				C60327D625064C5E00335011 /* MJHomeTableViewCell.m in Sources */,
+				C60327CB25064A2400335011 /* PermissionUtils.m in Sources */,
+				C60327DB25064EE400335011 /* MJDetailViewController.m in Sources */,
+				C6CE292824B03918003ADE43 /* main.m in Sources */,
+				C60327BF250649CF00335011 /* YHCropRectView.m in Sources */,
+				C6CE2EF824B0B534003ADE43 /* MJBaseViewController.m in Sources */,
+				C60327C3250649CF00335011 /* CWFlowLayout.m in Sources */,
+				C60327C6250649CF00335011 /* SVProgressHUD.m in Sources */,
+				C6CE2F0024B0B559003ADE43 /* MBProgressHUD+WJTools.m in Sources */,
+				C6CE2EF524B0B526003ADE43 /* MJNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE292924B03918003ADE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CE293224B03918003ADE43 /* MeiJuLoverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CE293424B03918003ADE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CE293D24B03918003ADE43 /* MeiJuLoverUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6CE292F24B03918003ADE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CE291124B03917003ADE43 /* MeiJuLover */;
+			targetProxy = C6CE292E24B03918003ADE43 /* PBXContainerItemProxy */;
+		};
+		C6CE293A24B03918003ADE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6CE291124B03917003ADE43 /* MeiJuLover */;
+			targetProxy = C6CE293924B03918003ADE43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6CE291E24B03917003ADE43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CE291F24B03917003ADE43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6CE292324B03918003ADE43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6CE292424B03918003ADE43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6CE293F24B03918003ADE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6CE294024B03918003ADE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6CE294224B03918003ADE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F68A33E01039BEA3F3426E /* Pods-MeiJuLover.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 534WHM8QMX;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MeiJuLover/Common/Marcos/PrefixHeader.pch";
+				INFOPLIST_FILE = MeiJuLover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.neiMengPai;
+				PRODUCT_NAME = "蒙古拍";
+				PROVISIONING_PROFILE_SPECIFIER = neiMengPaiDistribute;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C6CE294324B03918003ADE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753864C2C24E28A9C66D294C /* Pods-MeiJuLover.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 534WHM8QMX;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MeiJuLover/Common/Marcos/PrefixHeader.pch";
+				INFOPLIST_FILE = MeiJuLover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.neiMengPai;
+				PRODUCT_NAME = "蒙古拍";
+				PROVISIONING_PROFILE_SPECIFIER = neiMengPaiDistribute;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C6CE294524B03918003ADE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F816C77F48895D51D64D7DE7 /* Pods-MeiJuLoverTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeiJuLoverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MeiJuLoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiJuLover.app/MeiJuLover";
+			};
+			name = Debug;
+		};
+		C6CE294624B03918003ADE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB2B07DF1880FC0000C7AA7E /* Pods-MeiJuLoverTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeiJuLoverTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MeiJuLoverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeiJuLover.app/MeiJuLover";
+			};
+			name = Release;
+		};
+		C6CE294824B03918003ADE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C79DF4F7C111CEB8DD7187 /* Pods-MeiJuLover-MeiJuLoverUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeiJuLoverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MeiJuLoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeiJuLover;
+			};
+			name = Debug;
+		};
+		C6CE294924B03918003ADE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 493A7C6E0D459D2AEE7A3859 /* Pods-MeiJuLover-MeiJuLoverUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeiJuLoverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.MeiJuLoverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeiJuLover;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6CE290D24B03917003ADE43 /* Build configuration list for PBXProject "MeiJuLover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CE293F24B03918003ADE43 /* Debug */,
+				C6CE294024B03918003ADE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CE294124B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CE294224B03918003ADE43 /* Debug */,
+				C6CE294324B03918003ADE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CE294424B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLoverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CE294524B03918003ADE43 /* Debug */,
+				C6CE294624B03918003ADE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6CE294724B03918003ADE43 /* Build configuration list for PBXNativeTarget "MeiJuLoverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6CE294824B03918003ADE43 /* Debug */,
+				C6CE294924B03918003ADE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6CE290A24B03917003ADE43 /* Project object */;
+}
