@@ -1,6 +1,0 @@
-framework module Pods_MeiJuLover_MeiJuLoverUITests {
-  umbrella header "Pods-MeiJuLover-MeiJuLoverUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
